@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loader {
+  width: 100%;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.blink {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,0,0,0.5);
+  display: none;
+}
+
+.container {
+  text-align: center;
+  padding-top: 30px;
+  display: none;
+}
+
+.mods {
+  margin-bottom: 30px;
+}
+
+.time {
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+.numpad {
+  display: none;
+  padding-top: 30px;
+}
+.numpad .btn {
+  width: 70px;
+  height: 50px;
+  font-size: 20pt;
+  margin-bottom: 5px;
+}
+
+
+.btn-secondary {
+  color: #bbb;
+}
+
+
+
+
+
+
+
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  transform: rotate(45deg);
+  transform-origin: 32px 32px;
+}
+.lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: rgb(29, 29, 29);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: rgb(29, 29, 29);
+}
+.lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

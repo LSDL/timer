@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Timer</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="mods">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button id="btn-mod-stopwatch" type="button" class="btn btn-dark">Stop Watch</button>
+        <button id="btn-mod-countdown" type="button" class="btn btn-secondary">Count Down</button>
+      </div>
+    </div>
+    <div class="time">00:00:00 .000</div>
+    <div class="controls">
+      <button id="btn-reset" type="button" class="btn btn-dark">RESET</button>
+      <button id="btn-start" type="button" class="btn btn-success">START</button>
+    </div>
+    <div class="numpad">
+        <button type="button" class="btn btn-dark btn-numpad" data-num="7">7</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="8">8</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="9">9</button>
+        <br>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="4">4</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="5">5</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="6">6</button>
+        <br>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="1">1</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="2">2</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="3">3</button>
+        <br>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="0">0</button>
+        <button type="button" class="btn btn-dark btn-numpad" data-num="00">00</button>
+        <button type="button" class="btn btn-primary btn-numpad" data-num="C">C</button>
+    </div>
+  </div>
+
+  <div class="loader">
+    <div class="lds-heart"><div></div></div>
+  </div>
+
+  <div class="blink"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
